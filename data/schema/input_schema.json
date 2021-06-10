@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Schema",
+    "definitions": {
+        "Schema": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Gender": {
+                    "type": "string",
+                    "enum":["Male", "Female"]
+                },
+                "HeightCm": {
+                    "type": "integer"
+                },
+                "WeightKg": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Gender",
+                "HeightCm",
+                "WeightKg"
+            ],
+            "title": "Schema"
+        }
+    }
+}

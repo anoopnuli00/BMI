@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "additionalProperties": {
+        "$ref": "#/definitions/SchemaValue"
+    },
+    "definitions": {
+        "SchemaValue": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Gender": {
+                    "type": "string"
+                },
+                "HeightCm": {
+                    "type": "integer"
+                },
+                "WeightKg": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "Gender",
+                "HeightCm",
+                "WeightKg"
+            ],
+            "title": "SchemaValue"
+        }
+    }
+}
